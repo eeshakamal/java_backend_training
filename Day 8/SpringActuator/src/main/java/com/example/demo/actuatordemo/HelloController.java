@@ -1,0 +1,11 @@
+package com.example.demo.actuatordemo;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.GetMapping;
+@RestController
+public class HelloController {
+	@GetMapping("/hello")
+	public String sayHello() {
+		return "HeLLO Spring boot actuator is working !";
+	}
+
+}
